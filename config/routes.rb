@@ -1,6 +1,12 @@
 Loccasions::Application.routes.draw do
-  root :to => "home#index"
+  devise_for :users
 
+  root :to => "home#index"
+  
+  resources :events
+  
+  get 'events' => 'events#index', :as => :user_root
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

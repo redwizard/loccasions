@@ -24,4 +24,6 @@ group :test, :development do
   gem 'factory_girl_rails', '~> 1.1.0'
   gem 'database_cleaner', '~> 0.6.7'
   gem 'jasmine', '~> 1.1.0'
+  gem 'hpricot', '~> 0.8.4'
+  gem 'ruby_parser', '~> 2.2.0'
 end
